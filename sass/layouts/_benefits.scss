@@ -5,7 +5,7 @@
 .benefits__menu {
   list-style: none;
   gap: 30px;
-  padding: 0;  
+  padding: 0;
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,7 +27,6 @@
   }
   @include desktop {
     width: 270px;
-    // display: flex;
   }
 }
 
@@ -37,7 +36,7 @@
 
 .benefits__link {
   display: flex;
-  background-color: var(--gray-color);
+  background-color: $gray-color;
   justify-content: center;
   align-items: center;
   padding: 25px 0px;
@@ -51,7 +50,7 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black-color);
+  color: $black-color;
   padding: 0px 0px 10px 0px;
   text-align: center;
 }
@@ -62,6 +61,6 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: var(--googray-color);
+  color: $googray-color;
   width: 100%;
 }

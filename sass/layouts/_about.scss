@@ -1,7 +1,7 @@
-.about{
-  display: none;  
+.about {
+  display: none;
   @include desktop {
-    display:contents;
+    display: contents;
   }
 }
 
@@ -10,7 +10,7 @@
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--black-color);
+  color: $black-color;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -20,7 +20,9 @@
   list-style: none;
   display: flex;
   gap: 30px;
-  padding: 0;
+  @include desktop {
+    padding-bottom: 94px;
+  }
 }
 
 .about__item {
@@ -31,7 +33,7 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white-color;
   height: 295px;
 }
 

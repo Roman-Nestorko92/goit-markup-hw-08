@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../image/imgbackground-mob.jpg);
-    @include retina {
+  @include retina {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -57,19 +57,19 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 100%;
-  color: var(--white-color);
+  color: $white-color;
   margin: 0 auto;
   margin-bottom: 30px;
   @include mobile {
     max-width: 360px;
-  }  
+  }
   @include desktop {
     max-width: 700px;
   }
 }
 
 .main__btn {
-  background-color: var(--link-color);
+  background-color: $link-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -80,7 +80,7 @@
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  color: var(--white-color);
+  color: $white-color;
   display: block;
   margin: 0 auto;
 }

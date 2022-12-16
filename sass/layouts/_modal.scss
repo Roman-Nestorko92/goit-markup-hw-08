@@ -28,14 +28,14 @@
   border-radius: 5px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    @include mobile {
-      width: 450px;
-      height: 610px;
-    }
-    @include desktop {
-     min-height: 580px;
-     width: 530px;
-    }
+  @include mobile {
+    width: 450px;
+    height: 610px;
+  }
+  @include desktop {
+    min-height: 580px;
+    width: 530px;
+  }
 }
 
 .button-close {
@@ -88,7 +88,7 @@
   outline: transparent;
   margin-bottom: 10px;
   &:focus + .modal-icon {
-    fill: var(--link-color);
+    fill: $link-color;
   }
   &:focus {
     border-color: #2196f3;
@@ -115,10 +115,13 @@
   resize: none;
   outline: transparent;
   margin-bottom: 20px;
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .check-text-link {
-  margin: -14px 0px 50px 20px; 
+  margin: -14px 0px 50px 20px;
   width: 100%;
   @include desktop {
     margin-left: 40px;
@@ -135,17 +138,15 @@
   align-items: center;
   fill: transparent;
   .input-check:checked + & {
-    background-color: var(--link-color);
+    background-color: $link-color;
     border: none;
     fill: #ffffff;
   }
   .input-check:focus + & {
-    border-color: var(--link-color);
+    border-color: $link-color;
   }
   @include desktop {
     margin-left: 15px;
-    width: 20px;
-    height: 20px;
   }
 }
 
@@ -167,7 +168,7 @@
   color: #ffffff;
   display: block;
   margin: 0 auto;
-  &:hover{
+  &:hover {
     background-color: #2196f3;
   }
 }

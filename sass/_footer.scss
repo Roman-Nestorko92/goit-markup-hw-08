@@ -3,21 +3,20 @@
   padding-top: 60px;
   padding-bottom: 60px;
   @media screen and (max-width: 1199px) {
-    text-align: center;  
+    text-align: center;
   }
-    
 }
 
-.footer-address{
-  @include desktop{
+.footer-address {
+  @include desktop {
     display: flex;
   }
 }
 
-.tablet-flex{
-  @include tablet{
-     display: flex;
-  }  
+.tablet-flex {
+  @include tablet {
+    display: flex;
+  }
 }
 
 .footer-contact {
@@ -36,12 +35,12 @@
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: var(--link-color);
+  color: $link-color;
   text-decoration: none;
 }
 
 .footer-studio {
-  color: var(--white-color);
+  color: $white-color;
 }
 
 .footer-item {
@@ -54,7 +53,7 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: var(--white-color);
+  color: $white-color;
   text-decoration: none;
 }
 
@@ -68,32 +67,31 @@
   text-decoration: none;
 }
 
-.footer-icon{
-    margin-top: 60px;
-    margin-bottom: 60px;  
-  @include tablet{
+.footer-icon {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @include tablet {
     margin-top: 0;
     margin-left: auto;
   }
-  @include desktop{
+  @include desktop {
     margin-top: auto;
     margin-left: 70px;
     margin-right: 90px;
-    
   }
 }
 
-.footer-telegram{
+.footer-telegram {
   margin: 0 auto;
-  @include mobile{
+  @include mobile {
     width: 250px;
   }
-  @include tablet{
+  @include tablet {
     width: 350px;
   }
-  @include desktop{
+  @include desktop {
     padding-top: 15px;
-     width: 560px;    
+    width: 560px;
   }
 }
 
@@ -104,7 +102,7 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: $white-color;
   padding: 0px 0px 10px 0px;
 }
 
@@ -126,12 +124,12 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: var(--link-color);
+    background-color: $link-color;
   }
 }
 
 .footer-icon-picture {
-  fill: var(--white-color);
+  fill: $white-color;
 }
 
 .telegram-title {
@@ -141,7 +139,7 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white-color;
   padding: 0px 0px 10px 0px;
 }
 
@@ -166,12 +164,12 @@
   line-height: calc(20 / 14);
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 20px;
-  @include mobile{
+  @include mobile {
     width: 250px;
   }
-  @include tablet{
+  @include tablet {
     width: 350px;
-  }  
+  }
 }
 
 .telegram-btn {
@@ -185,8 +183,8 @@
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  color: #ffffff;
-  &:hover{
+  color: $white-color;
+  &:hover {
     background-color: #2196f3;
   }
 }
