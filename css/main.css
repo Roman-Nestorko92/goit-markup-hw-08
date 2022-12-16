@@ -532,7 +532,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .check-text-link {
-    margin-left: 35px;
+    margin-left: 40px;
   }
 }
 
@@ -557,6 +557,8 @@ a {
 @media screen and (min-width: 1200px) {
   .check-text span {
     margin-left: 15px;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -584,17 +586,7 @@ a {
 }
 
 .benefits {
-  padding-bottom: 0;
-}
-@media screen and (min-width: 480px) {
-  .benefits {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .benefits {
-    margin-bottom: 60px;
-  }
+  padding-bottom: 60px;
 }
 
 .benefits__menu {
@@ -752,8 +744,10 @@ a {
   background-color: var(--gray-color);
 }
 
-.space:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .space {
+    margin-bottom: 30px;
+  }
 }
 
 .team-title {
@@ -767,7 +761,7 @@ a {
 
 .main-team {
   list-style: none;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .main-team {
@@ -811,14 +805,13 @@ a {
   line-height: 1.1875;
   letter-spacing: 0.03em;
   color: var(--googray-color);
-  margin-bottom: 10px;
 }
 
 .icon-box {
   width: 230px;
   height: 45px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .team-icon-item {
@@ -996,13 +989,15 @@ a {
 }
 @media screen and (min-width: 768px) {
   .footer-icon {
-    margin-top: auto;
+    margin-top: 0;
     margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-icon {
+    margin-top: auto;
     margin-left: 70px;
+    margin-right: 90px;
   }
 }
 
@@ -1023,12 +1018,6 @@ a {
   .footer-telegram {
     padding-top: 15px;
     width: 560px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-icon {
-    margin-right: 90px;
   }
 }
 
@@ -1115,7 +1104,7 @@ a {
 .telegram-btn {
   width: 200px;
   height: 50px;
-  background-color: #2196f3;
+  background-color: rgb(24, 140, 232);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -1124,8 +1113,9 @@ a {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
-  justify-content: center;
-  align-items: center;
+}
+.telegram-btn:hover {
+  background-color: #2196f3;
 }
 
 .telegram-icon {

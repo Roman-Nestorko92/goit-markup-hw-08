@@ -2,8 +2,10 @@
   background-color: var(--gray-color);
 }
 
-.space:not(:last-child) {
-  margin-bottom: 30px;
+.space {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;   
+  }
 }
 
 .team-title {
@@ -17,7 +19,7 @@
 
 .main-team {
   list-style: none;
-  margin-top: 30px;
+  padding-top: 30px;
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,14 +59,13 @@
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--googray-color);
-  margin-bottom: 10px;
 }
 
 .icon-box {
   width: 230px;
   height: 45px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .team-icon-item {

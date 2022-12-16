@@ -121,7 +121,7 @@
   margin: -14px 0px 50px 20px; 
   width: 100%;
   @include desktop {
-    margin-left: 35px;
+    margin-left: 40px;
   }
 }
 
@@ -144,6 +144,8 @@
   }
   @include desktop {
     margin-left: 15px;
+    width: 20px;
+    height: 20px;
   }
 }
 
