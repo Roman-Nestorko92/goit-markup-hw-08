@@ -47,10 +47,7 @@
   }
 }
 
-.post-picture {
-  margin-right: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .menu__link {
   text-decoration: none;
@@ -87,6 +84,15 @@
 
 .head-line {
   width: 48px;
+}
+
+.post-picture {
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover
+   {
+    fill: var(--link-color);
+  }
 }
 
 .contact__link {

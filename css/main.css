@@ -166,11 +166,6 @@ a {
   }
 }
 
-.post-picture {
-  margin-right: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .menu__link {
   text-decoration: none;
   color: var(--black-color);
@@ -205,6 +200,14 @@ a {
 
 .head-line {
   width: 48px;
+}
+
+.post-picture {
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.post-picture:hover {
+  fill: var(--link-color);
 }
 
 .contact__link {
@@ -379,6 +382,16 @@ a {
   color: var(--white-color);
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 700px;
+  }
 }
 
 .main__btn {
