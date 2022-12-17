@@ -11,7 +11,14 @@
 .clients-icon-box {
   list-style: none;
   padding-top: 50px;
-
+  @media screen and (max-width: 479px) {
+    margin: 0 auto;
+    max-width: 290px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }  
   @include mobile {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,14 +37,25 @@
 
 .clients-item {
   margin: 0 auto;
-  width: 210px;
-}
-
-.clients-item:not(:last-child) {
-  @media screen and (max-width: 479px) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 479px){
+    width: 140px;
+  }
+  @include mobile {
+    width: 210px;
+  }
+  @include tablet {
+    width: 230px;
+  }
+  @include desktop {
+    width: 170px;
   }
 }
+
+// .clients-item:not(:last-child) {
+//   @media screen and (max-width: 479px) {
+//      margin-bottom: 30px;
+//   }
+// }
 
 .clients-icon-picture {
   fill: currentColor;

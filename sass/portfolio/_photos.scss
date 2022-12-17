@@ -15,9 +15,12 @@
   }
 }
 
-.portfolio-box:hover .window-link-text {
-  display: block;
-  transform: translateY(0);
+.portfolio-box {
+  &:hover .window-link-text,
+  &:focus .window-link-text{
+    display: block;
+    transform: translateY(0);
+  }  
 }
 
 .portfolio-box-content {

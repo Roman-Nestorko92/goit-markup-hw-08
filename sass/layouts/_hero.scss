@@ -58,13 +58,19 @@
   text-transform: uppercase;
   width: 100%;
   color: $white-color;
+  padding-bottom: 30px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  max-width: 695px;
   @include mobile {
+    max-width: 360px;
+  }  
+  @include tablet{
     max-width: 360px;
   }
   @include desktop {
-    max-width: 700px;
+    max-width: 695px;
+    font-size: 44px;
+    line-height: calc(60 / 44);
   }
 }
 

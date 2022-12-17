@@ -8,9 +8,9 @@
   @include tablet {
     display: flex;
   }
-  @include desktop {
-    display: flex;
-  }
+  // @include desktop {
+  //   display: flex;
+  // }
 }
 
 .nav__container {
@@ -44,9 +44,17 @@
   }
   @include tablet {
     display: block;
+    margin-top: -10px;
   }
   @include desktop {
     display: flex;
+    margin-top: 0;
+  }
+}
+
+.nav-item{
+  @media screen and (max-width: 1199px){
+    margin-bottom: 10px;
   }
 }
 
@@ -177,13 +185,13 @@
   color: var(--black-color);
   font-style: Medium;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
   line-height: calc(37 / 40);
   letter-spacing: 0.02em;
 }
 
 .mob__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 35px;
 }
 
 .mob__contact {
@@ -195,7 +203,7 @@
 }
 
 .mob-soc-menu {
-  gap: 20px;
+  gap: 5px;
 }
 
 .mob-soc-link {
